@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVD Creative Studio - Contacto</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+<body>
+    
+    <header></header>          
+        <nav class="navbar"> 
+            <div>
+                <img class="logo_header" src="../assets/img/MVD-CreativeStudio_IsoWhite.png" alt="">
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="titulo_cabezal">
+            <h2>CONTACTO</h2>
+        </div>
+
+        <!--FORMULARIO DE CONTACTO-->
+
+            <div class="contenedor_formulario">
+                <form class="formulario" action="contacto.php" method="get">
+                    <input class="form_area" type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                    <input class="form_area" type="number" name="dni" placeholder="DNI" required>
+                    <input class="form_area" type="email" name="email" placeholder="E-Mail" required>           
+                
+                    <div class="contenedor_radios" >
+                        <input type="radio" name="sexo" value="h">
+                        <label class="radio" for="sexo">Hombre</label>
+                        <input type="radio" name="sexo" value="m">
+                        <label class="radio" for="sexo">Mujer</label>
+                        <input type="radio" name="sexo" value="ne">
+                        <label class="radio" for="sexo">No Especifica</label>
+                    </div>
+
+                    <div class="aceptar">
+                        <input type="checkbox" name="acepto" value="si" required> <a href="./terminos-y-condiciones.html" target="_blank">Acepto los Términos y Condiciones</a> 
+                    </div> 
+
+                    <div class="botones_formulario">
+                        <input class="btn_submit" type="submit" value="Enviar">
+                        <input class="btn_submit" type="reset" value="Reiniciar">
+                    </div>
+                </form>
+            </div>
+
+            <p class="horario">Nuestro horario de atención es de Lunes a Viernes de 9:00 a 18:00 hs.</p>
+
+    </main>
+    <footer class="pie">
+        <div class="contactos_textos">
+            <p>Av. Uruguay 1218, Montevideo, Uruguay</p>
+            <p>+598 99 807 750</p>
+            <p>info@mvdcreativestudio.com</p>
+        </div>
+
+        <div class="final_footer">
+            <div class="derechos_footer">
+                <h5>MVD Creative Studio - Todos los derechos reservados</h5>
+            </div>
+        </div>
+
+        <div class="redes_sociales_footer">
+            <img src="../assets/img/Instagram.png" alt="">
+        </div>
+
+    </footer>
+</body>
+</html>

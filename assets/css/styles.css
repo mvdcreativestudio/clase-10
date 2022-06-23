@@ -1,0 +1,522 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+.index-body {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header  header header header header"
+                             "main    main   main   main main"
+                             "seccion seccion seccion seccion aside"
+                             "footer  footer  footer footer footer";
+}
+
+.quienes-body {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header  header header header header"
+                         "main    main   main   main main"
+                         "seccion seccion seccion seccion aside"
+                         "footer  footer  footer footer footer";
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seccion {
+    grid-area: seccion;
+}
+
+.seccion h2 {
+    text-align: center;
+    padding: 40px;
+    padding-top: 100px;
+}
+
+
+.principal {
+    grid-area: main;
+}
+
+.pie {
+    grid-area: footer;
+}
+
+.header {
+    grid-area: header;
+}
+
+.secundario {
+    grid-area: aside;
+}
+
+.navbar .logo_header {
+    max-height: 50px;
+    margin-left: 25px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 25px 0px 25px;
+    color: white;    
+    text-transform: uppercase;
+    font-family: Montserrat Black;
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: grey;
+}
+
+.descripcion {
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-image: url(../img/header_1600x400.png);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.titulo_cabezal {
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-image: url(../img/header_1600x400.png);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo_cabezal h2 {
+    color: white;    
+    text-align: center;
+}
+
+.descripcion h2 {
+    color: white;    
+}
+
+.descripcion p {
+    color: white;
+    font-family: Montserrat Thin;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Montserrat Black;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+.bloque-servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 33%;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.tarjeta__titulo {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+.tarjeta__descripcion {
+    margin: 5px;
+    text-align: center;
+    font-family: Montserrat Light;
+}
+
+.tarjeta__img {
+    padding-top: 20px;
+    width: 50%;   
+}
+
+.btn {
+    padding: 10px;
+    margin-top: 15px;
+    font-family: Montserrat SemiBold;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+.bloque-clientes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.tarjeta__cliente {
+    margin: 25px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    width: 40%;
+}
+
+.tarjeta__cliente__alien {
+    margin-top: 70px;
+    display: inline-block;
+    width: 30%;
+    float: right;
+}
+
+
+.tarjeta__cliente__img {
+    width: 100%;   
+}
+
+.agencia {
+    text-align: center;
+    padding-top: 50px;
+    font-family: Montserrat;
+}
+
+.agencia span {
+    font-weight: bold;
+}
+
+main h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.tarjeta_equipo {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.tarjeta_equipo_1 {
+    width: 25%;
+    padding: 0px 25px 0px 25px;
+}
+
+.tarjeta_equipo_2 {
+    width: 25%;
+    padding: 0px 25px 0px 25px;
+}
+
+.tarjeta_equipo_3 {
+    width: 25%;
+    padding: 0px 25px 0px 25px;
+}
+
+.tarjeta_equipo img {
+    width: 100%;
+}
+
+.tarjeta_equipo p {
+    font-weight: bolder;
+}
+
+.tarjeta_equipo h3 {
+    font-size: 16px;
+    padding-top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta_equipo p {
+    width: 100%;
+    text-align: center;
+    font-family: Montserrat Light;
+    font-size: 12px;
+    color: black;
+}
+
+.tarjeta_equipo ul {
+    padding-top: 10px;
+}
+
+.tarjeta_equipo ul li {
+    font-family: Montserrat Light;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    list-style: none;
+}
+
+.mapa {
+    width: 100%;
+    height: 600px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.mapa_contacto p {
+    font-family: Montserrat Light;
+    text-align: center;
+    width: 100%;
+}
+
+.main_ubicacion {
+    padding-bottom: 100px;
+}
+
+.botones_formulario {
+    padding-top: 20px;
+}
+
+.btn_submit {
+    width: 100px;
+    height: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+.form_area {
+    border: none;
+    border-bottom: solid 1px black;
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-family: Montserrat;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.contenedor_formulario {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radio {
+    padding-left: 0px;
+    padding-right: 50px;
+}
+
+.aceptar {
+    padding-top: 25px;
+    color: black;
+}
+
+.ads {
+    max-width: 100%;
+}
+
+.ads-title {
+    text-align: center;
+    padding: 50px;
+}
+
+.horario {
+    text-align: center;
+    padding: 100px;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+    width: 100%;
+    justify-content:space-between;
+    padding: 25px;
+}
+
+.contactos_textos {
+    color: white;
+    font-family: Montserrat Thin;
+    font-size: 13px;
+}
+
+.redes_sociales_footer {
+
+}
+
+.redes_sociales_footer img {
+    width: 25px;   
+    height: 25px; 
+}
+
+.derechos_footer  {
+    color: white;
+    line-height: 2;
+    font-family: Montserrat Thin;
+    text-align: center;  
+}
+
+
+
+
+/* RESPONSIVE MOBILE */
+
+@media(max-width:720px) {   
+    .index-body {
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "header  header header header header"
+                                 "main    main   main   main   main"
+                                 "seccion seccion seccion seccion seccion"
+                                 "aside aside aside aside aside"
+                                 "footer  footer  footer footer footer";
+}
+
+    .quienes-body {
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header  header header header header"
+                         "main    main   main   main   main"
+                         "seccion seccion seccion seccion seccion"
+                         "aside aside aside aside aside"
+                         "footer  footer  footer footer footer";
+}
+
+    .bloque-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 80%;
+    }
+
+    .bloque-clientes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta__cliente {
+        width: 80%;
+        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .tarjeta_equipo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjeta_equipo_1 {
+        width: 50%;
+        padding: 0px 25px 40px 25px;
+    }
+    
+    .tarjeta_equipo_2 {
+        width: 50%;
+        padding: 0px 25px 40px 25px;
+    }
+    
+    .tarjeta_equipo_3 {
+        width: 50%;
+        padding: 0px 25px 40px 25px;
+    }
+
+    .agencia {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .pie {
+        flex-direction: column;
+    }
+
+    .contactos_textos {
+        color: white;
+        font-family: Montserrat Thin;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .redes_sociales_footer {
+        padding-top: 30px;
+    
+    }
+    
+    .redes_sociales_footer img {
+        width: 25px;   
+        height: 25px;
+    }
+    
+    .derechos_footer p {
+        color: white;
+        line-height: 2;
+        font-family: Montserrat Thin;  
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .secundario {
+        display: none; 
+    }
+
+    .formulario {
+        width: 80%;
+    }
+}
